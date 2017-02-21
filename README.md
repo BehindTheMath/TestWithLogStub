@@ -10,7 +10,7 @@ This is a class that stubs out `android.util.Log` for unit testing, using [Power
     testCompile 'org.powermock:powermock-api-mockito:1.6.6'
     testCompile 'org.powermock:powermock-module-junit4:1.6.6'
 ```
-3. Subclass the TestWithLogMock class, and add your own methods. Call `Log.*` as usual, and the output will be redirected to the console.
+3. Subclass the TestWithLogStub class, and add your own methods. Call `Log.*` as usual, and the output will be redirected to the console.
 
 **Example:**
 ```java
@@ -22,7 +22,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestClass extends TestWithLogMock{
+public class TestClass extends TestWithLogStub{
     @Test
     public void test() {
         Log.i("TestClass", "This is a test");
