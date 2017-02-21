@@ -1,4 +1,4 @@
-# Test With Log Mock
+# Test With Log Stub
 This is a class that stubs out `android.util.Log` for unit testing, using [PowerMock](<https://github.com/powermock/powermock>) and [Mockito](<http://site.mockito.org/>). All `Log.*` methods are redirected to `System.out.println()`, so the output shows in the JUnit console. This allows easy unit testing of code with calls to `Log.*`, without requiring extensive modification to implement dependency injection, while still showing the output in the console.
 
 ## Usage
