@@ -22,7 +22,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestClass extends TestWithLogStub{
+public class TestClass extends TestWithLogStub {
     @Test
     public void test() {
         Log.i("TestClass", "This is a test");
